@@ -141,6 +141,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.0-x64-mingw-ucrt)
       racc (~> 1.4)
+    psych (5.0.2)
+      stringio
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -175,6 +177,8 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    rdoc (6.5.0)
+      psych (>= 4.0.0)
     regexp_parser (2.6.2)
     reline (0.3.2)
       io-console (~> 0.5)
@@ -207,6 +211,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    sdoc (2.6.0)
+      rdoc (>= 5.0)
     selenium-webdriver (4.7.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -221,6 +227,7 @@ GEM
     sqlite3 (1.6.0-x64-mingw-ucrt)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    stringio (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
@@ -269,6 +276,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.1)
   rspec-rails
   sass-rails
+  sdoc
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

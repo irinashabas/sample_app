@@ -34,4 +34,11 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/.secret
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
