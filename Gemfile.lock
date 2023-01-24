@@ -213,7 +213,7 @@ GEM
       tilt
     sdoc (2.6.0)
       rdoc (>= 5.0)
-    selenium-webdriver (4.7.1)
+    selenium-webdriver (4.8.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -266,7 +266,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  capybara
+  capybara (>= 2.2.0)
   coffee-rails
   debug
   importmap-rails
@@ -274,7 +274,7 @@ DEPENDENCIES
   jquery-rails
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
-  rspec-rails
+  rspec-rails (>= 2.0.0.beta)
   sass-rails
   sdoc
   selenium-webdriver

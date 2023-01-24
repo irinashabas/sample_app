@@ -12,7 +12,8 @@ gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 gem "sqlite3", "~> 1.4"
-gem 'rspec-rails'
+gem 'rspec-rails',      ">= 2.0.0.beta"
+gem "capybara", '>= 2.2.0'
 end
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -76,7 +77,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+  gem "capybara", '>= 2.2.0'
   gem "selenium-webdriver"
   gem "webdrivers"
 end
