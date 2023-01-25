@@ -14,6 +14,9 @@ group :development, :test do
 gem "sqlite3", "~> 1.4"
 gem 'rspec-rails',      ">= 2.0.0.beta"
 gem "capybara", '>= 2.2.0'
+gem 'spork'
+gem 'guard-rspec', '>= 2.5.0'
+gem 'guard-spork', '>= 1.5.0'
 end
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -80,6 +83,10 @@ group :test do
   gem "capybara", '>= 2.2.0'
   gem "selenium-webdriver"
   gem "webdrivers"
+  # Windows: раскомментируйте эти строки.
+   gem 'rb-notifu', ' >= 0.0.4'
+   gem 'win32console', '>= 1.3.2'
+   gem 'wdm', '>= 0.1.0'
 end
 
 group :doc do
