@@ -105,6 +105,11 @@ GEM
     diff-lcs (1.5.0)
     erubi (1.12.0)
     execjs (2.8.1)
+    factory_girl (4.9.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
+      railties (>= 3.0.0)
     ffi (1.15.5-x64-mingw-ucrt)
     formatador (1.1.0)
     globalid (1.0.1)
@@ -322,6 +327,7 @@ DEPENDENCIES
   capybara (>= 2.2.0)
   coffee-rails
   debug
+  factory_girl_rails
   guard-rspec (>= 2.5.0)
   guard-spork (>= 1.5.0)
   importmap-rails
