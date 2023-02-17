@@ -5,7 +5,7 @@ ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', ' >= 3.2.0.2'
 gem 'bcrypt-ruby', '3.1.2', require: 'bcrypt'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -90,6 +90,8 @@ group :test do
    gem 'win32console', '>= 1.3.2'
    gem 'wdm', '>= 0.1.0'
    gem 'factory_girl_rails'
+   gem 'cucumber-rails', '1.4.0', :require => false
+   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :doc do

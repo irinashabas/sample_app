@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/bmabey/database_cleaner.git
+  revision: 0ff5d014f5b36f63d8bb430cd36fd1bda2fbb6c9
+  specs:
+    database_cleaner (2.0.1)
+      database_cleaner-active_record (~> 2.0.0)
+    database_cleaner-core (2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -98,6 +106,38 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    cucumber (8.0.0)
+      builder (~> 3.2, >= 3.2.4)
+      cucumber-ci-environment (~> 9.0, >= 9.0.4)
+      cucumber-core (~> 11.0, >= 11.0.0)
+      cucumber-cucumber-expressions (~> 15.1, >= 15.1.1)
+      cucumber-gherkin (~> 23.0, >= 23.0.1)
+      cucumber-html-formatter (~> 19.1, >= 19.1.0)
+      cucumber-messages (~> 18.0, >= 18.0.0)
+      diff-lcs (~> 1.5, >= 1.5.0)
+      mime-types (~> 3.4, >= 3.4.1)
+      multi_test (~> 1.1, >= 1.1.0)
+      sys-uname (~> 1.2, >= 1.2.2)
+    cucumber-ci-environment (9.1.0)
+    cucumber-core (11.0.0)
+      cucumber-gherkin (~> 23.0, >= 23.0.1)
+      cucumber-messages (~> 18.0, >= 18.0.0)
+      cucumber-tag-expressions (~> 4.1, >= 4.1.0)
+    cucumber-cucumber-expressions (15.2.0)
+    cucumber-gherkin (23.0.1)
+      cucumber-messages (~> 18.0, >= 18.0.0)
+    cucumber-html-formatter (19.2.0)
+      cucumber-messages (~> 18.0, >= 18.0.0)
+    cucumber-messages (18.0.0)
+    cucumber-rails (1.4.0)
+      capybara (>= 1.1.2)
+      cucumber (>= 1.2.0)
+      nokogiri (>= 1.5.0)
+      rails (>= 3.0.0)
+    cucumber-tag-expressions (4.1.0)
+    database_cleaner-active_record (2.0.1)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -163,9 +203,13 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     minitest (5.17.0)
     msgpack (1.6.0)
+    multi_test (1.1.0)
     nenv (0.3.0)
     net-imap (0.3.4)
       date
@@ -282,6 +326,8 @@ GEM
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     stringio (3.0.4)
+    sys-uname (1.2.2)
+      ffi (~> 1.1)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
@@ -323,9 +369,11 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (= 3.1.2)
   bootsnap
-  bootstrap-sass
+  bootstrap-sass (>= 3.2.0.2)
   capybara (>= 2.2.0)
   coffee-rails
+  cucumber-rails (= 1.4.0)
+  database_cleaner!
   debug
   factory_girl_rails
   guard-rspec (>= 2.5.0)
