@@ -18,6 +18,7 @@ gem "sprockets-rails"
 group :development, :test do
 gem "sqlite3", "~> 1.4"
 gem 'rspec-rails',      ">= 2.0.0.beta"
+gem 'rspec-its'
 gem "capybara", '>= 2.2.0'
 gem 'spork'
 gem 'guard-rspec', '>= 2.5.0'
